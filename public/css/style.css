@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+section{
+    background-color: lightgreen;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+}
+
+section form input{
+    width: 300px;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+button{
+    display: block;
+    width: 310px;
+    font-size: 1em;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 3px;
+}
+
+button:hover{
+    background-color: rgb(255, 254, 199);
+}
+
+code{
+    font-family: monospace;
+    font-size: 1.2em;
+    background-color: rgb(255, 254, 199);
+    padding: 2px;
+}
+
+#output1, #output2, #output3{
+    display: none;
+}
+
+.other-section{
+    display: block;
+    width: 700px;
+    margin-top: 20px;
+}
+
+section #exerciselog{
+    display: flex;
+    flex-direction: row;
+}
+
+section #exerciselog input{
+    width: 4800px;
+    margin-right: 10px;
+}
+
+section #exerciselog button{
+    width: 100px;
+}

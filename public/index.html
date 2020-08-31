@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise Tracker | Frank Adakole Ameh</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Exercise Tracker</h1>
+        </div>
+        <div class="main-section">
+            <section>
+                <h3>Create a New User</h3>
+                <code>POST /api/exercise/new-user</code>
+                <form id="useradd">
+                    <input type="text" name="username" id="username" placeholder="username">
+                    <button type="submit">Submit</button>
+                    <p id="output1"></p>
+                </form>
+            </section>
+            <section>
+                <h3>Add Exercises</h3>
+                <code>POST /api/exercise/add</code>
+                <form id="exerciseadd">
+                    <input type="text" name="userid" id="userid" placeholder="userid*">
+                    <input type="text" name="description" id="description" placeholder="description*">
+                    <input type="text" name="duration" id="duration" placeholder="duration* (mins)">
+                    <input type="text" name="dateinput" id="dateinput" placeholder="date (yyyy-mm-dd)">
+                    <button type="submit">Submit</button>
+                    <p id="output2"></p>
+                </form>
+            </section>
+        </div>
+        <div class="other-section">
+            <section>
+                <p><strong>GET users's exercise log:</strong> <code>GET /api/exercise/log?{userid}[&from][&to][&limit]</code> </p>
+                <form id="exerciselog">
+                    <input type="text" name="username" id="username" placeholder="GET url endpoint">
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="output3"></p>
+            </section>
+            <p><strong>{}</strong> = required, <strong>[]</strong> = optional</p>
+            <p><strong>from, to </strong>= dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
